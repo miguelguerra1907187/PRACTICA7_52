@@ -1,0 +1,69 @@
+/* para las clases se usa . */
+/* Para los id se usa # */
+/* PARA los atributos[] */
+
+
+
+/* aqui se busca la clase titulo */
+.titulo{
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px gold;
+}
+
+/* aqui se busca los h1 que tengan la clase titulo */
+h1.titulo{
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px gold;
+}
+
+/* selector de un atributo que tenga un atributo con valor especifico */
+p[lang="en"]{
+    background-color: aqua;
+}
+/* busca los href que terminan con punto org en los a */
+a[href$="org"]{
+    background-color: black;
+}
+
+/* que inicie con # */
+a[href^="#"]{
+    background-color:brown
+}
+
+/* que contenga la palabra empresa */
+a[href*="empresa"]{
+    font-size: 25px;
+}
+
+/* que busquental cual empresa en los href */
+a[href~="empresa"]{
+    background-color: white
+}
+
+
+
+
+/* selector de descendientes donde main es el papa tomando hijos directos y nietos*/
+/* main p{
+    border-bottom: 1px dashed black;
+
+} */
+
+
+/* selector hijo directo donde main es papa */
+main>p{
+    border-bottom: 1px dashed black;
+
+}
+
+/* selector de hermano ADYACENTE */
+h3+p{
+    border-top: 1px solid red;
+    border-radius: 10px;
+}
+
+/* selector de hermano general */
+h3~p{
+    border-bottom:2px purple;
+
+}
